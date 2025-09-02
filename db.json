@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": "7f39",
+      "Name": "santhiya",
+      "Phone": "9843496526",
+      "Address": "marthandam",
+      "Order": "piza"
+    },
+    {
+      "id": "bca6",
+      "Name": "jeri",
+      "Phone": "9843496526",
+      "Address": "marthandam",
+      "Order": "burger"
+    },
+    {
+      "id": "6755",
+      "Name": "jeri",
+      "Phone": "9843496526",
+      "Address": "marthandam",
+      "Order": "burger"
+    },
+    {
+      "id": "625b",
+      "Name": "jerisma",
+      "Phone": "9843496526",
+      "Address": "marthandam",
+      "Order": "7up"
+    }
+  ]
+}

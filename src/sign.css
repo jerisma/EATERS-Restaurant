@@ -1,0 +1,19 @@
+.form-bg {
+  /* background-image: url("./assets/finlog.jpg"); */
+  background-size: cover;
+  background-position: center;
+  width: 500px; 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(8px); 
+}
+.glass-box {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(12px);            
+  /* -webkit-backdrop-filter: blur(100px);    */
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  width: 400px;
+}
+.back{
+    background-image: url("./assets/fin a.jpg");
+    background-size: 100% 100%;
+}

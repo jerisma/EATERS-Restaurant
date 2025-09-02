@@ -1,0 +1,15 @@
+.body{
+    background-image: url('./assets/aa.jpeg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.stbody{
+    background-image: url('./assets/about1.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100lvh;
+}

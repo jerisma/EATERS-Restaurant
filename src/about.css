@@ -1,0 +1,14 @@
+.image{
+    background-image: url('./assets/man.png');
+     height: 75vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.me{
+   text-shadow: 2px 2px  2px black;
+  font-size: 55px;
+}
+.mee{
+    color: hwb(183 5% 64%);
+}
