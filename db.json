@@ -41,6 +41,13 @@
       "Phone": "9843496526",
       "Address": "bharathapally",
       "Order": "chicken"
+    },
+    {
+      "id": "5ecd",
+      "Name": "jeri",
+      "Email": "j@gmail.com",
+      "Password": "jeri",
+      "Phone": "12345"
     }
   ]
 }
