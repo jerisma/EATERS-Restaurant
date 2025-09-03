@@ -228,7 +228,7 @@ import axios from "axios";
 import { Button, Modal, Card, Row, Col, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import Video from "./assets/video.mp4";
+// import Video from "./assets/video.mp4";
 import "./getss.css"; // for video styling
 
 const App = () => {

@@ -27,6 +27,20 @@
       "Phone": "9843496526",
       "Address": "marthandam",
       "Order": "7up"
+    },
+    {
+      "id": "aabc",
+      "Name": "jerisma",
+      "Email": "j@gmail.com",
+      "Password": "jeri",
+      "Phone": "12345"
+    },
+    {
+      "id": "6988",
+      "Name": "j",
+      "Phone": "9843496526",
+      "Address": "bharathapally",
+      "Order": "chicken"
     }
   ]
 }
