@@ -142,7 +142,7 @@ const Signup = () => {
     <div
       className="d-flex justify-content-center align-items-center vh-100 hi"
      
-    ><div className='p-4 shadow rounded text-center w-50 hello'>
+    ><div className='p-4 shadow rounded text-center  hello'>
       <h1 style={{ color: 'blue', fontFamily: 'cursive', marginTop: 0 }}>SIGN UP</h1>
       <Form
         noValidate
