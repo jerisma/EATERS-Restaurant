@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 back">
       <div className="glass-box p-4 rounded shadow text-white w-100">
-        <h1 style={{ color: "brown" }}>LOGIN</h1>
+        <h1 style={{ color: "black" ,justifyContent:'center' }} >LOGIN</h1>
 
         {error && <div className="text-danger mb-3 fw-bold">{error}</div>}
 
