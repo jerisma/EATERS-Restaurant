@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -15,7 +14,9 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 
 
+// import Img1 from "./assets/C.jpg";
 import Img1 from "./assets/C.jpg";
+
 import Img2 from "./assets/A.jpg";
 import Img3 from "./assets/D.png";
 import Imgm from "./assets/deal.svg";
@@ -52,26 +53,26 @@ const TaliwinWeb = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/fhome">Home</Nav.Link>
-            <Nav.Link href="/flocatio">Location</Nav.Link>
+            <Nav.Link  onClick={() => navigate("/fhome")}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate("/flocatio")}>Location</Nav.Link>
 
             <NavDropdown title="About" id="about-dropdown">
-              <NavDropdown.Item href="/about">Our Philosophy</NavDropdown.Item>
-              <NavDropdown.Item href="/ourstory">Our Story</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about")}>Our Philosophy</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/ourstory")}>Our Story</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Menu" id="menu-dropdown">
-              <NavDropdown.Item href="/Snak">Snacks</NavDropdown.Item>
-              <NavDropdown.Item href="/rice">Rice BowlZ</NavDropdown.Item>
-              <NavDropdown.Item href="/burger">Burger</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/Snak")}>Snacks</NavDropdown.Item>
+              <NavDropdown.Item  onClick={() => navigate("/rice")}>Rice BowlZ</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/burger")}>Burger</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/beva">Beverage</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/beva")}>Beverage</NavDropdown.Item>
             </NavDropdown>
           </Nav>
 
           <Nav className="d-flex align-items-center">
-            <Navbar.Brand href="/forms">Online Orders</Navbar.Brand>
-            <Nav.Link href="/contact">Contact us</Nav.Link>
+            <Navbar.Brand onClick={() => navigate("/forms")}>Online Orders</Navbar.Brand>
+            <Nav.Link  onClick={() => navigate("/contact")}>Contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -248,7 +249,7 @@ const TaliwinWeb = () => {
     />
   </a>
 
-  <a href="https://instagram.com/yourpage" >
+  <a href="https://www.instagram.com/" >
     <img
       src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg?semt=ais_hybrid&w=740&q=80"
       className="w-10 h-10 rounded-full hover:scale-110 transition-transform"

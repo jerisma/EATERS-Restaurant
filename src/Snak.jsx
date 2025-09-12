@@ -34,31 +34,31 @@ const App = () => {
 
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/fhome">Home</Nav.Link>
-            <Nav.Link href="/flocatio">Location</Nav.Link>
+            <Nav.Link  onClick={() => navigate("/fhome")}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate("/flocatio")}>Location</Nav.Link>
 
             <NavDropdown title="About" id="about-dropdown">
-              <NavDropdown.Item href="/about">Our Philosophy</NavDropdown.Item>
-              <NavDropdown.Item href="/ourstory">Our Story</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/about")}>Our Philosophy</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/ourstory")}>Our Story</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Menu" id="menu-dropdown">
-              <NavDropdown.Item href="/Snak">Snacks</NavDropdown.Item>
-              <NavDropdown.Item href="/rice">Rice BowlZ</NavDropdown.Item>
-              <NavDropdown.Item href="/burger">Burger</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/Snak")}>Snacks</NavDropdown.Item>
+              <NavDropdown.Item  onClick={() => navigate("/rice")}>Rice BowlZ</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/burger")}>Burger</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/beva">Beverage</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/beva")}>Beverage</NavDropdown.Item>
             </NavDropdown>
           </Nav>
 
           <Nav className="d-flex align-items-center">
-            <Nav.Link href="/forms">Online Orders</Nav.Link>
-                        <Nav.Link href="/contact">Contact us</Nav.Link>
-
+            <Navbar.Brand onClick={() => navigate("/forms")}>Online Orders</Navbar.Brand>
+            <Nav.Link  onClick={() => navigate("/contact")}>Contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+      
       
 
       {/* Card Section */}

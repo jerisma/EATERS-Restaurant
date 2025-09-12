@@ -1,11 +1,60 @@
 import React from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
+// import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import './contact.css'
 const App = () => {
     const navigate = useNavigate();
   return (
     <div className='con'>
+       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        
+        <Navbar.Brand
+          onClick={() => navigate("/")}
+          style={{
+            color: "red",
+            fontFamily: "cursive",
+            fontSize: "2rem",  
+            fontWeight: "bold",
+            cursor: "pointer"
+          }}
+        >
+          EATER
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link  onClick={() => navigate("/fhome")}>Home</Nav.Link>
+            <Nav.Link onClick={() => navigate("/flocatio")}>Location</Nav.Link>
+
+            <NavDropdown title="About" id="about-dropdown">
+              <NavDropdown.Item onClick={() => navigate("/about")}>Our Philosophy</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/ourstory")}>Our Story</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Menu" id="menu-dropdown">
+              <NavDropdown.Item onClick={() => navigate("/Snak")}>Snacks</NavDropdown.Item>
+              <NavDropdown.Item  onClick={() => navigate("/rice")}>Rice BowlZ</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => navigate("/burger")}>Burger</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() => navigate("/beva")}>Beverage</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+
+          <Nav className="d-flex align-items-center">
+            <Navbar.Brand onClick={() => navigate("/forms")}>Online Orders</Navbar.Brand>
+            <Nav.Link  onClick={() => navigate("/contact")}>Contact us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+      
     <Container className="mt-5">
       <Row className="justify-content-center">
         <Col md={6}>

@@ -29,13 +29,6 @@
       "Order": "7up"
     },
     {
-      "id": "aabc",
-      "Name": "jerisma",
-      "Email": "j@gmail.com",
-      "Password": "jeri",
-      "Phone": "12345"
-    },
-    {
       "id": "6988",
       "Name": "j",
       "Phone": "9843496526",
@@ -43,11 +36,18 @@
       "Order": "chicken"
     },
     {
-      "id": "5ecd",
+      "id": "ea96",
+      "Name": "jer",
+      "Phone": "9843496526",
+      "Address": "marthandam",
+      "Order": "kkkk"
+    },
+    {
+      "id": "3674",
       "Name": "jeri",
       "Email": "j@gmail.com",
       "Password": "jeri",
-      "Phone": "12345"
+      "Phone": "123"
     }
   ]
 }
