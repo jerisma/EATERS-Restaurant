@@ -46,11 +46,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-   
-   
-     
-
+    <div className="apps">
       <div className="content-overlay">
         <Container className="mt-4">
           {loading ? (

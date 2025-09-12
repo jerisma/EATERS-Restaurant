@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 // import './flog.css';
 import "./form.css";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -16,6 +16,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const validate = () => {
+    const navigate = useNavigate();
     const newErrors = {};
 
     if (!name.trim()) newErrors.name = 'Name is required.';
@@ -134,7 +135,7 @@ const Signup = () => {
         <p>
           Already have an account? <a href="/">Login</a>
         </p>
-        <Button variant="info" type="submit">
+        <Button variant="info" type="submit" onClick={() => navigate("/")}>
           Sign Up
         </Button>
       </Form>
