@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -30,8 +29,8 @@ const Login = () => {
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 back">
-      <div className="glass-box p-4 rounded shadow text-white w-100">
-        <h1 style={{ color: "black" ,justifyContent:'center' }} >LOGIN</h1>
+      <div className="glass-box p-4 rounded-4 shadow-lg text-white text-center w-100">
+        <h1 className="login-title mb-4">LOGIN</h1>
 
         {error && <div className="text-danger mb-3 fw-bold">{error}</div>}
 
@@ -64,9 +63,10 @@ const Login = () => {
             Don’t have an account?{" "}
             <span
               style={{
-                color: "blue",
+                color: "#0d6efd",
                 textDecoration: "underline",
                 cursor: "pointer",
+                fontWeight: "600",
               }}
               onClick={() => navigate("/Fform")}
             >
@@ -74,7 +74,7 @@ const Login = () => {
             </span>
           </p>
 
-          <Button variant="primary" type="submit" className="w-100">
+          <Button variant="primary" type="submit" className="w-100 fw-bold">
             Submit
           </Button>
         </Form>
@@ -84,3 +84,4 @@ const Login = () => {
 };
 
 export default Login;
+
