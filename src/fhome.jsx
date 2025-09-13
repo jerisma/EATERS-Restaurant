@@ -71,7 +71,7 @@ const TaliwinWeb = () => {
           </Nav>
 
           <Nav className="d-flex align-items-center">
-            <Navbar.Brand onClick={() => navigate("/forms")}>Online Orders</Navbar.Brand>
+            <Navbar.Brand onClick={() => navigate("/forms")}style={{cursor:"pointer"}}>Online Orders</Navbar.Brand>
             <Nav.Link  onClick={() => navigate("/contact")}>Contact us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
